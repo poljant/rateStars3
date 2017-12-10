@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Testy knockaout.js</title>
+	<link rel="stylesheet" href="css/stars.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+</head>
+
+<body>
+	<div class="stars-box">
+		<h4>DEMO</h4>
+		<h4>Oceń usługę 1.</h4>
+
+		<div class="stars" data-bind="event: {mouseout: function() {if(stars1().ratingStar()===0) stars1().starsClick(0);}}">
+			<div class="star" ><i class="material-icons" data-bind="event: {mouseover: function() {stars1().starsHover(1)}}, style: {color: stars1().colorStar1}, html: stars1().star1, click: function() {stars1().starsClick(1)}">star_border</i></div>
+			<div class="star" ><i class="material-icons" data-bind="event: {mouseover: function() {stars1().starsHover(2)}}, style: {color: stars1().colorStar2}, html: stars1().star2, click: function() {stars1().starsClick(2)}">star_boarder</i></div>
+			<div class="star" ><i class="material-icons" data-bind="event: {mouseover: function() {stars1().starsHover(3)}}, style: {color: stars1().colorStar3}, html: stars1().star3, click: function() {stars1().starsClick(3)}">star_border</i></div>
+			<div class="star" ><i class="material-icons" data-bind="event: {mouseover: function() {stars1().starsHover(4)}}, style: {color: stars1().colorStar4}, html: stars1().star4, click: function() {stars1().starsClick(4)}">star_border</i></div>
+			<div class="star" ><i class="material-icons" data-bind="event: {mouseover: function() {stars1().starsHover(5)}}, style: {color: stars1().colorStar5}, html: stars1().star5, click: function() {stars1().starsClick(5)}">star_border</i></div>
+		</div>
+		<h4>Oceń usługę 2.</h4>
+		<div class="stars" data-bind="event: {mouseout: function() {if(stars2().ratingStar()===0) stars2().starsClick(0);}}">
+			<div class="star" ><i class="material-icons" data-bind="event: {mouseover: function() {stars2().starsHover(1)}}, style: {color: stars2().colorStar1}, html: stars2().star1, click: function() {stars2().starsClick(1)}">star_border</i></div>
+			<div class="star" ><i class="material-icons" data-bind="event: {mouseover: function() {stars2().starsHover(2)}}, style: {color: stars2().colorStar2}, html: stars2().star2, click: function() {stars2().starsClick(2)}">star_boarder</i></div>
+			<div class="star" ><i class="material-icons" data-bind="event: {mouseover: function() {stars2().starsHover(3)}}, style: {color: stars2().colorStar3}, html: stars2().star3, click: function() {stars2().starsClick(3)}">star_border</i></div>
+			<div class="star" ><i class="material-icons" data-bind="event: {mouseover: function() {stars2().starsHover(4)}}, style: {color: stars2().colorStar4}, html: stars2().star4, click: function() {stars2().starsClick(4)}">star_border</i></div>
+			<div class="star" ><i class="material-icons" data-bind="event: {mouseover: function() {stars2().starsHover(5)}}, style: {color: stars2().colorStar5}, html: stars2().star5, click: function() {stars2().starsClick(5)}">star_border</i></div>
+		</div>
+		<h4>Oceń usługę 3.</h4>
+		<div class="stars" data-bind="event: {mouseout: function() {if(stars3().ratingStar()===0) stars3().starsClick(0);}}">
+			<div class="star" ><i class="material-icons" data-bind="event: {mouseover: function() {stars3().starsHover(1)}}, style: {color: stars3().colorStar1}, html: stars3().star1, click: function() {stars3().starsClick(1)}">star_border</i></div>
+			<div class="star" ><i class="material-icons" data-bind="event: {mouseover: function() {stars3().starsHover(2)}}, style: {color: stars3().colorStar2}, html: stars3().star2, click: function() {stars3().starsClick(2)}">star_boarder</i></div>
+			<div class="star" ><i class="material-icons" data-bind="event: {mouseover: function() {stars3().starsHover(3)}}, style: {color: stars3().colorStar3}, html: stars3().star3, click: function() {stars3().starsClick(3)}">star_border</i></div>
+			<div class="star" ><i class="material-icons" data-bind="event: {mouseover: function() {stars3().starsHover(4)}}, style: {color: stars3().colorStar4}, html: stars3().star4, click: function() {stars3().starsClick(4)}">star_border</i></div>
+			<div class="star" ><i class="material-icons" data-bind="event: {mouseover: function() {stars3().starsHover(5)}}, style: {color: stars3().colorStar5}, html: stars3().star5, click: function() {stars3().starsClick(5)}">star_border</i></div>
+		</div>
+		<br>
+	</div>
+	
+</body>
+	<script src='js/knockout-3.4.2.js'></script>
+	
+	<script src="js/stars.js"></script>
+
+<footer>PolJanT Copyright &copy; 2017</footer>
+</html>
